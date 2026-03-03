@@ -102,7 +102,7 @@ const UploadSubCategoryModel = ({ close }) => {
                   <p className="text-sm text-neutral-400">No Image</p>
                 ) : (
                   <img
-                    src={data.image}
+                    src={""}
                     className="w-full h-full object-scale-down"
                     alt=""
                   />

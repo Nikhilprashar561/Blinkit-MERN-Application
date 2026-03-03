@@ -10,6 +10,7 @@ import { MdDelete } from "react-icons/md";
 import EditSubCategory from "../components/EditSubCategoty";
 import ConfirmBox from "../components/ConfirmBox";
 import ViewImage from "../components/ViewImage";
+import toast from "react-hot-toast";
 
 const SubCategory = () => {
   const [openAddSubCategory, setOpenAddSubCategory] = useState(false);

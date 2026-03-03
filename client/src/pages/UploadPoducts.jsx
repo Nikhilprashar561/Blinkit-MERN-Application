@@ -250,7 +250,7 @@ const UploadPoducts = () => {
                 }}
               >
                 <option value={""}>Select Category</option>
-                {allCategory.map((c, index) => {
+                {allCategory.map((c) => {
                   return <option value={c?._id}>{c.name}</option>;
                 })}
               </select>
@@ -298,7 +298,7 @@ const UploadPoducts = () => {
                 <option value={""} className="text-neutral-600">
                   Select Sub Category
                 </option>
-                {allSubCategory.map((c, index) => {
+                {allSubCategory.map((c) => {
                   return <option value={c?._id}>{c.name}</option>;
                 })}
               </select>
@@ -388,7 +388,7 @@ const UploadPoducts = () => {
           </div>
 
           {/**add more field**/}
-          {Object?.keys(data?.more_details)?.map((k, index) => {
+          {Object?.keys(data?.more_details)?.map((k) => {
             return (
               <div className="grid gap-1">
                 <label htmlFor={k} className="font-medium">

@@ -1,4 +1,3 @@
-import React from 'react'
 import UserMenu from '../components/UserMenu'
 import { IoIosClose } from "react-icons/io";
 

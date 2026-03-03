@@ -59,7 +59,7 @@ axiosURL.interceptors.request.use(
       localStorage.setItem("accessToken", accessToken)
       return accessToken
     } catch (error) {
-      
+      console.log(error)
     }
   }
 

@@ -1,4 +1,4 @@
-import React from "react";
+
 import noDataImage from "../assets/nothing here yet.webp";
 
 const NoData = () => {

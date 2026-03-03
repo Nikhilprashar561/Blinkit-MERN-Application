@@ -1,4 +1,4 @@
-import React from 'react'
+
 import { isAdmin } from '../utils/isAdmin'
 import { useSelector } from 'react-redux'
 
