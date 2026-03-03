@@ -7,7 +7,7 @@ import Register from "../pages/Register";
 import VerificationOtp from "../pages/VerificationOtp";
 import ForgotPassword from "../pages/ForgotPassword"
 import ResetPassword from "../pages/ResetPassword";
-import UserMenuPage from "../pages/userMenuPage";
+import UserMenuPage from "../pages/UserMenuPage";
 import Dashboard from "../layouts/Dashboard";
 import Profile from "../pages/Profile";
 import Address from "../pages/Address";
