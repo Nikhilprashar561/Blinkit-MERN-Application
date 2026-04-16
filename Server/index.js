@@ -6,6 +6,7 @@ import cookieParser from "cookie-parser"
 import cors from "cors"
 
 import connectDB from "./db/connect.js";
+
 import userRouter from "./routes/user.routee.js"
 import cateGoryRouter from "./routes/category.routee.js"
 import uploadImageRouter from "./routes/upload.routee.js"

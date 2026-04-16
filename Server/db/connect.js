@@ -1,25 +1,25 @@
 import mongoose from "mongoose";
-import dotenv from "dotenv"
+import dotenv from "dotenv";
 
 dotenv.config({
-    path:'./.env'
-})
+  path: "./.env",
+});
 
-const MongoConnection = process.env.MONGODB_URL
+const MongoConnection = process.env.MONGODB_URL;
 
-if(!MongoConnection){
-    throw new Error(
-        "Sorry MongoDB was not connected"
-    )
+if (!MongoConnection) {
+  throw new Error("Sorry MongoDB was not connected");
 }
 
-async function connectDB(){
-    try {
-        const connectionInstances = await mongoose.connect(process.env.MONGODB_URL)
-        console.log(`MongoDB was connect at ${connectionInstances.connection.host}`)
-    } catch (error) {
-        console.log("Database was not Connected" , error)
-    }
+async function connectDB() {
+  try {
+    const connectionInstances = await mongoose.connect(process.env.MONGODB_URL);
+    console.log(
+      `MongoDB was connect at ${connectionInstances.connection.host}`,
+    );
+  } catch (error) {
+    console.log("Database was not Connected", error);
+  }
 }
 
-export default connectDB
+export default connectDB;
